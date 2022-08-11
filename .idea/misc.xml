@@ -5,9 +5,21 @@
       <map>
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/background_splash_screen.xml" value="0.15" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/ic_gnb_back.xml" value="0.2535" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/ic_tabbar_cart_off.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/ic_tabbar_cart_on.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/ic_tabbar_category_off.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/ic_tabbar_category_on.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/ic_tabbar_home_off.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/ic_tabbar_home_on.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/selector_cart_icon.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/selector_category_icon.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/selector_home_icon.xml" value="0.2155" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/layout/activity_product_detail.xml" value="0.33" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/layout/fragment_cart.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/layout/fragment_category.xml" value="0.1" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/layout/fragment_home.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/menu/navigation_main_menu.xml" value="0.33489583333333334" />
       </map>
     </option>
   </component>

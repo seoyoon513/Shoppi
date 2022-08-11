@@ -1,4 +1,4 @@
-package com.syoon.shoppi
+package com.syoon.shoppi.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.syoon.shoppi.R
 
 class HomeFragment: Fragment() {
 
