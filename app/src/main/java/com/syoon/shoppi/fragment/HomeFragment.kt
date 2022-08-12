@@ -1,11 +1,13 @@
 package com.syoon.shoppi.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.syoon.shoppi.AssetLoader
 import com.syoon.shoppi.R
 
 class HomeFragment: Fragment() {
@@ -27,5 +29,9 @@ class HomeFragment: Fragment() {
             transaction.add(R.id.container_main, ProductDetailFragment())
             transaction.commit()
         }
+
+        val assetLoader = AssetLoader()
+        val homeData = assetLoader.getJsonString(requireContext(), "home.json")
+        Log.d("homeData", homeData ?: "")
     }
 }
