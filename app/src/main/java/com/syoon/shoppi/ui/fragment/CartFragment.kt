@@ -1,4 +1,4 @@
-package com.syoon.shoppi.fragment
+package com.syoon.shoppi.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
