@@ -3,7 +3,7 @@ package com.syoon.shoppi.ui.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.syoon.shoppi.Banner
+import com.syoon.shoppi.model.Banner
 import com.syoon.shoppi.model.Title
 import com.syoon.shoppi.repository.HomeRepository
 

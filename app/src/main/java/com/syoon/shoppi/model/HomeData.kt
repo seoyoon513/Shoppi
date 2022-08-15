@@ -1,7 +1,6 @@
 package com.syoon.shoppi.model
 
 import com.google.gson.annotations.SerializedName
-import com.syoon.shoppi.Banner
 
 data class HomeData(
     val title: Title,
