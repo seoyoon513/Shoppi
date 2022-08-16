@@ -1,4 +1,4 @@
-package com.syoon.shoppi.repository
+package com.syoon.shoppi.repository.home
 
 import com.google.gson.Gson
 import com.syoon.shoppi.AssetLoader

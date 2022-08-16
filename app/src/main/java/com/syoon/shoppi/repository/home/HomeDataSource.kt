@@ -1,4 +1,4 @@
-package com.syoon.shoppi.repository
+package com.syoon.shoppi.repository.home
 
 import com.syoon.shoppi.model.HomeData
 

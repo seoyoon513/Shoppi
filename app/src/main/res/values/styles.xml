@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- ImageView Style -->
+    <style name="Circle">
+        <item name="cornerSize">50%</item>
+    </style>
+    
     <!-- Text Style -->
     <style name="TextHeadline.Black02" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:textColor">@color/shoppi_black_02</item>
@@ -34,11 +39,23 @@
         <item name="android:textColor">@color/shoppi_white</item>
     </style>
 
+    android:textStyle="bold"
+    android:textColor="@color/shoppi_black_02"
+    android:textSize="14sp"
+
     <style name="TextSubtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:textColor">@color/shoppi_black_01</item>
     </style>
 
-    <style name="TextSubtitle2.Grey05" parent="TextAppearance.MaterialComponents.Subtitle2">
+    <style name="TextSubtitle2.Black02">
+        <item name="android:textColor">@color/shoppi_black_02</item>
+    </style>
+
+    <style name="TextSubtitle2.Black02.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitle2.Grey05">
         <item name="android:textColor">@color/shoppi_grey_05</item>
     </style>
 
@@ -62,6 +79,14 @@
     <style name="TextCaption2" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textSize">11sp</item>
         <item name="android:textColor">@color/shoppi_black_01</item>
+    </style>
+    
+    <style name="TextCaption2.white">
+        <item name="android:textColor">@color/shoppi_white</item>
+    </style>
+
+    <style name="TextCaption2.white.Bold">
+        <item name="android:textStyle">bold</item>
     </style>
     
     <style name="TextHeadline5.Black" parent="TextAppearance.MaterialComponents.Headline5">
