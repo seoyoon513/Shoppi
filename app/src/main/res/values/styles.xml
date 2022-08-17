@@ -18,6 +18,10 @@
         <item name="android:textColor">@color/shoppi_black_01</item>
     </style>
 
+    <style name="TextMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="TextMedium.Purple">
         <item name="android:textColor">@color/shoppi_purple</item>
     </style>
@@ -30,6 +34,10 @@
         <item name="android:textColor">@color/shoppi_black_01</item>
     </style>
 
+    <style name="TextSubtitle1.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="TextSubtitle1.White" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="android:textColor">@color/shoppi_white</item>
     </style>
@@ -38,10 +46,6 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/shoppi_white</item>
     </style>
-
-    android:textStyle="bold"
-    android:textColor="@color/shoppi_black_02"
-    android:textSize="14sp"
 
     <style name="TextSubtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:textColor">@color/shoppi_black_01</item>
@@ -59,6 +63,14 @@
         <item name="android:textColor">@color/shoppi_grey_05</item>
     </style>
 
+    <style name="TextSubtitle2.Purple">
+        <item name="android:textColor">@color/shoppi_purple</item>
+    </style>
+
+    <style name="TextSubtitle2.Purple.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="TextSubtitle3">
         <item name="android:textSize">13sp</item>
         <item name="android:textColor">@color/shoppi_black_01</item>
@@ -72,8 +84,12 @@
         <item name="android:textColor">@color/shoppi_black_01</item>
     </style>
 
-    <style name="TextCaption1.Grey03" parent="TextAppearance.AppCompat.Caption">
+    <style name="TextCaption1.Grey03">
         <item name="android:textColor">@color/shoppi_grey_03</item>
+    </style>
+
+    <style name="TextCaption1.Grey05">
+        <item name="android:textColor">@color/shoppi_grey_05</item>
     </style>
 
     <style name="TextCaption2" parent="TextAppearance.AppCompat.Caption">
