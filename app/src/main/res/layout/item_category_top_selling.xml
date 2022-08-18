@@ -21,7 +21,7 @@
 
         <ImageView
             android:id="@+id/iv_category_top_selling_image"
-            imageUrl="@{category.thumbnailImageUrl}"
+            circleImageUrl="@{category.thumbnailImageUrl}"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@drawable/background_circle_gradient"
