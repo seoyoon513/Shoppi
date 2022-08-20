@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/background_black_gradient.xml" value="0.1935" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/background_bluegrey_r20.xml" value="0.172" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/background_circle_gradient.xml" value="0.1935" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/background_home_banner.xml" value="0.1705" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/background_purple_r24.xml" value="0.171" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/background_splash_screen.xml" value="0.15" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Shoppi/app/src/main/res/drawable/background_white.xml" value="0.2" />
