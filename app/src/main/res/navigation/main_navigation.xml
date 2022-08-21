@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_cart"
-        android:name="com.syoon.shoppi.ui.fragment.CartFragment"
+        android:name="com.syoon.shoppi.ui.productdetail.CartFragment"
         android:label="CartFragment"
         tools:layout="@layout/fragment_cart" />
     <fragment
@@ -35,7 +35,7 @@
         tools:layout="@layout/fragment_category_detail" />
     <fragment
         android:id="@+id/navigation_product_detail"
-        android:name="com.syoon.shoppi.ui.fragment.ProductDetailFragment"
+        android:name="com.syoon.shoppi.ui.productdetail.ProductDetailFragment"
         android:label="ProductDetailFragment"
         tools:layout="@layout/fragment_product_detail" />
 </navigation>

@@ -24,6 +24,7 @@
             android:layout_height="343dp"
             android:layout_marginStart="16dp"
             android:scaleType="centerCrop"
+            imageUrl="@{banner.backgroundImageUrl}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/RoundedBig" />

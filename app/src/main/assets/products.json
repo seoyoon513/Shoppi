@@ -1,0 +1,46 @@
+{
+  "products": {
+    "FW-twg-sweater-1": {
+      "brand_name": "twg. official",
+      "label": "캐시미어 100% 터틀넥 스웨터",
+      "discount_rate": 9,
+      "price": 102000,
+      "type": "Free",
+      "representative_image_url": "https://user-images.githubusercontent.com/110798031/185755043-4ceebe33-bb89-41b6-b2d4-9e3d6a0a0ab1.png",
+      "descriptions": [
+        {
+          "id": "FW-twg-sweater-1-desc-1",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185755036-799c4365-be20-496e-a772-ced0df3a64d2.jpg"
+        },
+        {
+          "id": "FW-twg-sweater-1-desc-2",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185755040-9da8ac94-a81e-4120-8b0a-a0bca5d04afb.jpg"
+        }
+      ],
+      "product_id": "FW-twg-sweater-1"
+    },
+    "desk-1": {
+      "brand_name": "Desk",
+      "label": "슬림 데스크 800",
+      "discount_rate": 16,
+      "price": 160000,
+      "type": "1800x720",
+      "representative_image_url": "https://user-images.githubusercontent.com/110798031/185755035-3a475c6b-6862-49bf-96d3-c498dd947a1f.png",
+      "descriptions": [
+        {
+          "id": "desk-1-desc-1",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185755025-dd14bcd5-738e-4191-b94c-2a9b362808e1.jpg"
+        },
+        {
+          "id": "desk-1-desc-2",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185755027-747c1222-56b2-465d-914c-2ff78c852514.jpg"
+        },
+        {
+          "id": "desk-1-desc-3",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185755029-cfef969f-a514-4fc0-bca1-29dcf938829b.jpg"
+        }
+      ],
+      "product_id": "desk-1"
+    }
+  }
+}

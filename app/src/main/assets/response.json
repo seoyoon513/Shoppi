@@ -152,5 +152,51 @@
         }
       ]
     }
+  },
+  "products": {
+    "FW-twg-sweater-1": {
+      "brand_name": "twg. official",
+      "label": "캐시미어 100% 터틀넥 스웨터",
+      "discount_rate": 9,
+      "price": 102000,
+      "type": "Free",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/20774764/149948264-a5595830-0ce1-4052-892e-3e846ffc0b29.png",
+      "representative_image_url": "https://user-images.githubusercontent.com/110798031/185772196-d9569cc1-401a-4d43-b626-e6664c93ce76.png",
+      "descriptions": [
+        {
+          "id": "FW-twg-sweater-1-desc-1",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185772190-c909c8e2-8991-4c41-8055-9160718c86e6.jpg"
+        },
+        {
+          "id": "FW-twg-sweater-1-desc-2",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185772192-f182c2a6-b99f-4e7f-ad82-f2c41965c53e.jpg"
+        }
+      ],
+      "product_id": "FW-twg-sweater-1"
+    },
+    "desk-1": {
+      "brand_name": "Desk",
+      "label": "슬림 데스크 800",
+      "discount_rate": 16,
+      "price": 160000,
+      "type": "1800x720",
+      "thumbnail_image_url": "https://user-images.githubusercontent.com/20774764/149948262-1aa6b506-b1a7-4531-bead-8ac061b6ce71.png",
+      "representative_image_url": "https://user-images.githubusercontent.com/110798031/185772187-bdc0739a-547d-4619-98d1-8be89fada9a5.png",
+      "descriptions": [
+        {
+          "id": "desk-1-desc-1",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185772182-d0522526-1615-4f4d-84a8-697f7542df1b.jpg"
+        },
+        {
+          "id": "desk-1-desc-2",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185772183-59bd19e1-6495-4e84-b260-3ad89533e236.jpg"
+        },
+        {
+          "id": "desk-1-desc-3",
+          "image_url": "https://user-images.githubusercontent.com/110798031/185772185-2d44d62a-1d5a-4170-a094-ba033c56066f.jpg"
+        }
+      ],
+      "product_id": "desk-1"
+    }
   }
 }

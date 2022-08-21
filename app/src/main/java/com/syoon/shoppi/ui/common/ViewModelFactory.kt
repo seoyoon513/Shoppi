@@ -13,7 +13,10 @@ import com.syoon.shoppi.ui.home.HomeViewModel
 import com.syoon.shoppi.network.ApiClient
 import com.syoon.shoppi.repository.categorydetail.CategoryDetailRemoteDataSource
 import com.syoon.shoppi.repository.categorydetail.CategoryDetailRepository
+import com.syoon.shoppi.repository.productdetail.ProductDetailRemoteDataSource
+import com.syoon.shoppi.repository.productdetail.ProductDetailRepository
 import com.syoon.shoppi.ui.categorydetail.CategoryDetailViewModel
+import com.syoon.shoppi.ui.productdetail.ProductDetailViewModel
 import java.lang.IllegalArgumentException
 
 class ViewModelFactory(private val context: Context): ViewModelProvider.Factory {
@@ -30,6 +33,10 @@ class ViewModelFactory(private val context: Context): ViewModelProvider.Factory 
             modelClass.isAssignableFrom(CategoryDetailViewModel::class.java) -> {
                 val repository = CategoryDetailRepository(CategoryDetailRemoteDataSource(ApiClient.create()))
                 CategoryDetailViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(ProductDetailViewModel::class.java) -> {
+                val repository = ProductDetailRepository(ProductDetailRemoteDataSource(ApiClient.create()))
+                ProductDetailViewModel(repository) as T
             }
             else -> {
                 throw IllegalArgumentException("Failed to create ViewModel: ${modelClass.name}")
