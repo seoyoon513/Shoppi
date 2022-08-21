@@ -11,6 +11,7 @@ import com.syoon.shoppi.repository.home.HomeRepository
 import com.syoon.shoppi.ui.category.CategoryViewModel
 import com.syoon.shoppi.ui.home.HomeViewModel
 import com.syoon.shoppi.network.ApiClient
+import com.syoon.shoppi.network.ServiceLocator
 import com.syoon.shoppi.repository.categorydetail.CategoryDetailRemoteDataSource
 import com.syoon.shoppi.repository.categorydetail.CategoryDetailRepository
 import com.syoon.shoppi.repository.productdetail.ProductDetailRemoteDataSource
@@ -27,15 +28,15 @@ class ViewModelFactory(private val context: Context): ViewModelProvider.Factory 
                 HomeViewModel(repository) as T
             }
             modelClass.isAssignableFrom(CategoryViewModel::class.java) -> {
-                val repository = CategoryRepository(CategoryRemoteDataSource(ApiClient.create()))
+                val repository = CategoryRepository(CategoryRemoteDataSource(ServiceLocator.provideApiClient()))
                 CategoryViewModel(repository) as T
             }
             modelClass.isAssignableFrom(CategoryDetailViewModel::class.java) -> {
-                val repository = CategoryDetailRepository(CategoryDetailRemoteDataSource(ApiClient.create()))
+                val repository = CategoryDetailRepository(CategoryDetailRemoteDataSource(ServiceLocator.provideApiClient()))
                 CategoryDetailViewModel(repository) as T
             }
             modelClass.isAssignableFrom(ProductDetailViewModel::class.java) -> {
-                val repository = ProductDetailRepository(ProductDetailRemoteDataSource(ApiClient.create()))
+                val repository = ProductDetailRepository(ProductDetailRemoteDataSource(ServiceLocator.provideApiClient()))
                 ProductDetailViewModel(repository) as T
             }
             else -> {
