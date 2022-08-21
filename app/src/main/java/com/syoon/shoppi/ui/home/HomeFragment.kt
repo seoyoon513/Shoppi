@@ -8,14 +8,13 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.ConcatAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import com.syoon.shoppi.*
 import com.syoon.shoppi.databinding.FragmentHomeBinding
-import com.syoon.shoppi.ui.common.EventObserver
-import com.syoon.shoppi.ui.common.KEY_PRODUCT_ID
-import com.syoon.shoppi.ui.common.ViewModelFactory
+import com.syoon.shoppi.ui.common.*
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), ProductClickListener {
 
     private val viewModel: HomeViewModel by viewModels { ViewModelFactory(requireContext()) }
     private lateinit var binding: FragmentHomeBinding
@@ -36,6 +35,7 @@ class HomeFragment : Fragment() {
         setToolbar()
         setNavigation()
         setTopBanners()
+        setListAdapter()
     }
 
     private fun setToolbar() {
@@ -46,9 +46,11 @@ class HomeFragment : Fragment() {
 
     private fun setNavigation() {
         viewModel.openProductEvent.observe(viewLifecycleOwner, EventObserver { productId ->
-            findNavController().navigate(R.id.action_home_to_product_detail, bundleOf(
-                KEY_PRODUCT_ID to productId
-            ))
+            findNavController().navigate(
+                R.id.action_home_to_product_detail, bundleOf(
+                    KEY_PRODUCT_ID to productId
+                )
+            )
         })
     }
 
@@ -76,5 +78,23 @@ class HomeFragment : Fragment() {
 
             }.attach()
         }
+    }
+
+    private fun setListAdapter() {
+        val titleAdapter = SectionTitleAdapter()
+        val promotionAdapter = PromotionAdapter(this)
+        binding.rvHome.adapter = ConcatAdapter(titleAdapter, promotionAdapter)
+        viewModel.promotions.observe(viewLifecycleOwner) { promotions ->
+            titleAdapter.submitList(listOf(promotions.title))
+            promotionAdapter.submitList((promotions.items))
+        }
+    }
+
+    override fun onProductClick(productId: String) {
+        findNavController().navigate(
+            R.id.action_home_to_product_detail, bundleOf(
+                KEY_PRODUCT_ID to "desk-1"
+            )
+        )
     }
 }

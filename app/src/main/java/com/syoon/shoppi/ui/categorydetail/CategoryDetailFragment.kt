@@ -8,10 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.ConcatAdapter
 import com.syoon.shoppi.databinding.FragmentCategoryDetailBinding
-import com.syoon.shoppi.ui.common.KEY_CATEGORY_LABEL
-import com.syoon.shoppi.ui.common.ViewModelFactory
+import com.syoon.shoppi.ui.common.*
 
-class CategoryDetailFragment: Fragment() {
+class CategoryDetailFragment: Fragment(), ProductClickListener {
 
     private lateinit var binding: FragmentCategoryDetailBinding
     private val viewModel : CategoryDetailViewModel by viewModels { ViewModelFactory(requireContext()) }
@@ -40,8 +39,8 @@ class CategoryDetailFragment: Fragment() {
 
     private fun setListAdapter() {
         val topSellingSectionAdapter = CategoryTopSellingSectionAdapter()
-        val titleAdapter = CategorySectionTitleAdapter()
-        val promotionAdapter = CategoryPromotionAdapter()
+        val titleAdapter = SectionTitleAdapter()
+        val promotionAdapter = PromotionAdapter(this)
         binding.rvCategoryDetail.adapter = ConcatAdapter(topSellingSectionAdapter, titleAdapter, promotionAdapter)
         viewModel.topSelling.observe(viewLifecycleOwner) { topSelling ->
             topSellingSectionAdapter.submitList(listOf(topSelling))
@@ -50,5 +49,9 @@ class CategoryDetailFragment: Fragment() {
             titleAdapter.submitList(listOf(promotions.title))
             promotionAdapter.submitList(promotions.items)
         }
+    }
+
+    override fun onProductClick(productId: String) {
+        // TODO("Not yet implemented")
     }
 }
