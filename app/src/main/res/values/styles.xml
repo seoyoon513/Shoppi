@@ -109,6 +109,10 @@
         <item name="android:textColor">@color/shoppi_black_01</item>
     </style>
 
+    <style name="TextCaption1.Grey01">
+        <item name="android:textColor">@color/shoppi_grey_01</item>
+    </style>
+
     <style name="TextCaption1.White">
         <item name="android:textColor">@color/shoppi_white</item>
     </style>
@@ -140,6 +144,10 @@
     
     <style name="TextHeadline5.Black" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:textColor">@color/shoppi_black_02</item>
+    </style>
+
+    <style name="TextHeadline5.Black.Bold">
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

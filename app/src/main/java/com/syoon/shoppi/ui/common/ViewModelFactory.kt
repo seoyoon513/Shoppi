@@ -16,6 +16,7 @@ import com.syoon.shoppi.repository.categorydetail.CategoryDetailRemoteDataSource
 import com.syoon.shoppi.repository.categorydetail.CategoryDetailRepository
 import com.syoon.shoppi.repository.productdetail.ProductDetailRemoteDataSource
 import com.syoon.shoppi.repository.productdetail.ProductDetailRepository
+import com.syoon.shoppi.ui.cart.CartViewModel
 import com.syoon.shoppi.ui.categorydetail.CategoryDetailViewModel
 import com.syoon.shoppi.ui.productdetail.ProductDetailViewModel
 import java.lang.IllegalArgumentException
@@ -38,6 +39,9 @@ class ViewModelFactory(private val context: Context): ViewModelProvider.Factory 
             modelClass.isAssignableFrom(ProductDetailViewModel::class.java) -> {
                 val repository = ProductDetailRepository(ProductDetailRemoteDataSource(ServiceLocator.provideApiClient()))
                 ProductDetailViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(CartViewModel::class.java) -> {
+                CartViewModel() as T
             }
             else -> {
                 throw IllegalArgumentException("Failed to create ViewModel: ${modelClass.name}")
