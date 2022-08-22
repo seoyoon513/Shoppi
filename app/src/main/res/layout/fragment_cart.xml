@@ -21,7 +21,7 @@
                 android:id="@+id/toolbar_cart"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:title="@string/label_cart"
+                app:title="장바구니"
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:titleTextAppearance="@style/TextHeadline.Black02.Bold" />
 
